@@ -5,16 +5,3 @@ services:
     repo: https://github.com/render-examples/sveltekit-static
     buildCommand: npm install && npm run build
     staticPublishPath: build
-  - type: web
-    name: flask-hello-world
-    env: python
-    repo: https://github.com/render-examples/flask-hello-world
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app
-  - type: web
-    name: flask-2
-    env: python
-    repo: https://github.com/render-examples/flask-hello-world
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app
-    plan: standard
