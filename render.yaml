@@ -1,7 +1,13 @@
 services:
   - type: web
-    name: my-static-site-2
+    name: my-static-site
     env: static
     repo: https://github.com/render-examples/sveltekit-static
     buildCommand: npm install && npm run build
     staticPublishPath: build
+  - type: web
+    name: flask-hello-world
+    env: python
+    repo: https://github.com/render-examples/flask-hello-world
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
