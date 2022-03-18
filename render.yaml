@@ -4,4 +4,3 @@ services:
     ipAllowList:
       - source: 0.0.0.0
         description: everywhere
-    plan: starter
